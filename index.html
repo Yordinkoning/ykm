@@ -1,44 +1,46 @@
 <style>
-  .maintext {
-    background-color: white;
-    color: rgb(123, 53, 158);
+  .fp {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255)
+  }
+  .mainimg {
+    max-width: 300px;
+    border-radius: 40px;
+    transition: max-width 1s;
+  }
+
+  .mainimg:hover {
+    max-width: 310px;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 40px;
+    left: 1197.5;
+    background: none;
+    color: rgb(255, 255, 255);
     border-style: solid;
-    border-color: rgb(123, 53, 158);
-    border-radius: 8px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
     padding-left: 20;
     padding-right: 20;
     padding-top: 8;
     padding-bottom: 8;
     font-weight: bold;
-    transition: background-color 1s,
-    color 1s;
+    font-size: 20;
+    transition: background 1s, color 1s;
   }
 
-  .maintext:hover {
-    background-color: rgb(123, 53, 158);
-    color: white;
-  }
-
-  .maintext:active {
-    background-color: rgb(82, 35, 106);
-    border-color: rgb(82, 35, 106);
-    transition: background-color 0.15s;
-  }
-
-  .mainimg {
-    max-width: 50%;
-    border-radius: 40px;
-    transition: opacity 1s;
-  }
-
-  .mainimg:hover {
-    opacity: 0.5;
+  .bottom-left:hover {
+    background: white;
+    color: black;
   }
 
 </style>
-
-<img src="img/main.jpg" class="mainimg">
-
-<button class="maintext">
-  Yordin Koning
-</button>
+<div class="fp">
+  <img src="img/main.jpg" class="mainimg">
+  <button class="bottom-left">
+    PORTFOLIO
+  </button>
+</div>
