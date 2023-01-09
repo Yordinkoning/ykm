@@ -1,3 +1,62 @@
-<button>
-  hi
-</button>
+<style>
+  body {
+    background-color: #f9f9f9;
+    opacity: 0.8;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, #f9f9f9 0, #f9f9f9 50%);
+  }
+  
+  .pb {
+    background-color: transparent;
+    color: rgb(127, 25, 168);
+  
+    border-color: rgb(127, 25, 168);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+  
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  
+    transition: color 0.3s,
+    background-color 0.3s,
+    transform 0.5s,
+    box-shadow 0.3s;
+  
+    margin: 100px;
+  }
+  
+  .pb:hover {
+    color: white;
+    background-color: rgb(127, 25, 168);
+  
+    box-shadow: 0px 0px 25px 0px rgba(127, 25, 168);
+  
+    transform: scale(1.2);
+  
+    cursor: pointer;
+  }
+  
+  .pb:active {
+    border-color: rgb(98, 19, 130);
+    background-color: rgb(98, 19, 130);
+  }
+  </style>
+  
+  <button onclick="portfolio()" class="pb">
+    Portfolio
+  </button>
+  
+  <script>
+    const name = document.querySelector(".name");
+  
+    function portfolio() {
+      location.href = 'https://www.trikon.nl/';
+  }
+  </script>
