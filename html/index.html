@@ -1,4 +1,6 @@
+<head>
 <meta name="viewport" content="width=960px">
+
 <style>
   body {
     background-color: #f9f9f9;
@@ -59,16 +61,19 @@
 
   </style>
 
+  <script>
+  const name = document.querySelector(".name");
+
+  function portfolio() {
+    location.href = 'https://www.trikon.nl/';
+  }
+  </script>
+
+</head>
+<body>
   <img src="/ykm/images/Portfolio-img.jpg" class="PF_img">
 
   <button onclick="portfolio()" class="pb">
     Portfolio
   </button>
-
-  <script>
-    const name = document.querySelector(".name");
-  
-    function portfolio() {
-      location.href = 'https://www.trikon.nl/';
-  }
-  </script>
+</body>
