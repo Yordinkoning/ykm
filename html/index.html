@@ -6,6 +6,7 @@
     background-color: #000000;
     background-size: 10px 10px;
     background-image: repeating-linear-gradient(45deg, #000000 0, #000000 1px, 0f0f0f 0, #0f0f0f 50%);
+    cursor: url('/ykm/images/Agencies-img.jpg'), auto;
   }
   
   .pb {
@@ -57,6 +58,7 @@
 
   .PF_img:hover {
     transform: scale(1.065);
+    cursor: pointer;
   }
   
   .AG_img {
@@ -79,11 +81,15 @@
   function portfolio() {
     location.href = 'https://www.trikon.nl/';
   }
+
+  function PF_img() {
+    location.href = 'https://www.trikon.nl/';
+  }
   </script>
 
 </head>
 <body>
-  <img src="/ykm/images/Portfolio-img.jpg" class="PF_img">
+  <img src="/ykm/images/Portfolio-img.jpg" onclick="PF_img()" class="PF_img">
   <img src="/ykm/images/Agencies-img.jpg" class="AG_img">
 
   <button onclick="portfolio()" class="pb">
